@@ -1,14 +1,25 @@
 .card{
     margin-left: 5%;
-    height: 180px;
+    height: max-content;
     display: block;
     text-align: center;
     align-items: center;
     justify-content: center;
-    width: 10%;
+    width: 15rem;
     color: white;
-    background-color: rgba(0, 0, 139, 0.763);
+    background-color: #161b35;
+    border-radius: 15px;
+    font-weight: 400;
+    padding: 10px 5px 30px 5px;
+    img{
+        width: 20px;
+        height: 20px;
+        color: white;
+    }
+
 }
+
+
 
 .btn-on{
     text-align: center;

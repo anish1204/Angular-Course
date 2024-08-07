@@ -1,7 +1,12 @@
 <div class="card">
+    <img src="../../assets/images/device.png" alt="">
     <h2>Device : {{product.deviceName}}</h2>
     <p>deviceStatus : {{product.deviceStatus}}</p>
     <p>deviceType : {{product.deviceType}}</p>
-    <button class="btn-on" [disabled]="!(product.deviceStatus=='ON')">ON</button>
-    <button class="btn-off" [disabled]="!(product.deviceStatus=='OFF')">OFF</button>
+    <button class="btn-on" [disabled]="(product.deviceStatus)" (click)="onButtonChange()" >ON</button>
+    <button class="btn-off" [disabled]="!(product.deviceStatus)" (click)="onButtonChange()" >OFF</button>
+    
+    <input (input)="onNameChange($event)" >
+    <!-- <p>Device : {{product.deviceName}}</p> -->
+
 </div>

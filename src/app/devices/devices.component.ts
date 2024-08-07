@@ -10,7 +10,15 @@ import { Component } from '@angular/core';
 export class DevicesComponent {
     product={
       deviceName: "TV",
-      deviceStatus : "OFF",
+      deviceStatus: false,
       deviceType:"Basic"
+    }
+    onNameChange(event:any){
+     this.product.deviceName ='Mark';
+      console.log(event.target.value); 
+    }
+    onButtonChange()
+    {
+      this.product.deviceStatus = !this.product.deviceStatus;
     }
 }
