@@ -1,0 +1,7 @@
+<div class="card">
+    <h2>Device : {{product.deviceName}}</h2>
+    <p>deviceStatus : {{product.deviceStatus}}</p>
+    <p>deviceType : {{product.deviceType}}</p>
+    <button class="btn-on" [disabled]="!(product.deviceStatus=='ON')">ON</button>
+    <button class="btn-off" [disabled]="!(product.deviceStatus=='OFF')">OFF</button>
+</div>
