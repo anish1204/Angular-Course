@@ -1,6 +1,6 @@
 
 <div class="search-product">
     <input class="search-input" [(ngModel)]="searchText" >
-    <button class="btn-search" > Search </button>
+    <button [ngClass]="{'btn-search':searchText,'btn-search-disabled':!searchText}"[disabled]="!searchText" > Search </button>
 </div>
 <div class="search-result"><p><strong>Search Result for : </strong>{{searchText}}</p></div>

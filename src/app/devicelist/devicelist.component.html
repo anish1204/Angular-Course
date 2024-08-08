@@ -1,2 +1,14 @@
 
 <app-search></app-search>
+<div class="contianer" style="display: flex; justify-content: space-evenly; ">
+    <div class="card" *ngFor="let item of data" style="border: 2px solid black;">
+        <p><strong>device-info</strong></p>
+        <p>{{item.brand}}</p>
+        <p *ngIf="item.brand=='LENOVO'" [ngStyle]='{color: "Red"}'>Critical Device Running</p>
+        <p *ngIf="item.brand=='NIKE'"  [ngStyle]='{color: "Green"}'  >Safe Device Running</p>
+        <p>{{item.name}}</p>
+        <br>
+        <p>{{item.model}}</p>
+    </div>
+</div>
+    

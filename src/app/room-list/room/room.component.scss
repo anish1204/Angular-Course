@@ -1,0 +1,19 @@
+.room-card{
+    
+    height: max-content;
+    display: block;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    color: white;
+    background-image: linear-gradient(to left,#770cbd,#A530F2);
+    border-radius: 15px;
+    font-weight: 400;
+    padding: 10px 5px 30px 5px;
+    img{
+        width: 20px;
+        height: 20px;
+        color: white;
+    }
+}

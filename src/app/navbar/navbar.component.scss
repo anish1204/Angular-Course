@@ -1,8 +1,10 @@
 
 .container{
     top:0;
-    background-color: #171A3B;
-    color: white;
+    // background-color: #171A3B;
+    background-color: #11153a;
+    color: #7b70e5;
+   
     display: flex;
     text-align: center;
     align-items: center;
@@ -13,11 +15,12 @@
     font-family:Arial, Helvetica, sans-serif;
     display: flex;
     left: 0;
-    width: 40%;
+    width: 40%; font-size: larger;
     padding-left: 2%;
 }
 
 .rght-side{
+    font-size: smaller;
     width: 60%;
     display: flex;
     position: relative;
